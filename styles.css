@@ -1,0 +1,311 @@
+body {
+  max-width: 60rem;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 5vmin;
+  font: normal normal 300 12pt/1.5em sans-serif;
+  }
+
+html, body {
+  min-height: 100%;
+  }
+
+main {
+  padding: 0 0 5rem;
+  }
+
+.footer {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 5vmin;
+  padding: 1.5rem;
+  background: #888;
+  }
+
+.footer,
+.footer a {
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  }
+
+h1, h2, h3, h4, h5, h6, header {
+  margin: 1.5em 0 .75em;
+  font-weight: 300;
+  }
+
+header > h1,
+header > h2,
+header > h3,
+header > h4,
+header > h5,
+header > h6 {
+  margin: 0;
+  }
+
+h1, h2, h3 {
+  text-rendering: optimizeLegibility;
+  letter-spacing: -.028em;
+  }
+
+h1 {
+  font-size: 2em;
+  margin-top: .25em;
+  }
+
+h2 {
+  font-size: 1.667em;
+  }
+
+h3 {
+  font-size: 1.333em;
+  }
+
+h4, h5, h6 {
+  font-size: 1em;
+  }
+
+h4 {
+  font-weight: 600;
+  }
+
+h5 {
+  font-weight: 400;
+  }
+
+h6 {
+  font-style: italic;
+  }
+
+p, ol, ul, dl, table {
+  margin: .75em 0;
+  }
+
+li {
+  margin: .25em 0;
+  }
+
+.price {
+  font-size: 1.333em;
+  }
+
+label,
+.price {
+  color: #170;
+  }
+
+:link,
+.block-link:link .block-link__text,
+:visited,
+.block-link:visited .block-link__text {
+  color: #02b;
+  text-decoration: underline;
+  }
+
+:hover,
+.block-link:hover .block-link__text {
+  color: #46f;
+  }
+
+body,
+.block-link,
+.router-link-active,
+.block-link.router-link-active .block-link__text {
+  color: #000;
+  }
+
+
+input,
+textarea,
+select,
+option {
+  font-size: 1em;
+  }
+
+
+section {
+  margin: 1.5em 0;
+  }
+
+  section > h3:first-child {
+    margin-top: 0;
+    }
+
+  header {
+    margin: 1.5em 0 ;
+    }
+
+  header > nav {
+    float: left;
+    margin-right: 1.5em;
+    }
+
+  header > h2 {
+    margin-top: 0;
+    }
+
+
+figure {
+  margin: .75em 0;
+  padding: 0;
+  text-align: center;
+  }
+
+figure > img {
+  max-width: 100%;
+  }
+
+
+.block-link {
+  display: block;
+  text-decoration: none;
+  }
+
+  .block-link .block-link__text {
+    text-decoration: underline;
+    }
+
+
+.router-link-active,
+.block-link.router-link-active .block-link__text {
+  text-decoration: none;
+  cursor: default;
+  }
+
+
+table {
+  border-collapse: collapse;
+  text-align: left;
+  font-weight: inherit;
+  }
+
+  td, th {
+    border-bottom: 1px solid #ccc;
+    padding: .75em .75em;
+    }
+
+  th {
+    font-weight: 600;
+    vertical-align: bottom;
+    }
+
+  td {
+    vertical-align: top;
+    }
+
+  tr:last-child td,
+  tr:last-child th {
+    border-bottom: none;
+    }
+
+.table-responsive {
+  max-width: 100%;
+  overflow: scroll;
+  }
+
+  .table-responsive > table {
+    min-width: 100%;
+    }
+
+
+.navbar {
+  background-color: #eee;
+  background: linear-gradient(#ccc, #eee);
+  }
+
+.navbar {
+  padding-top: .5rem;
+  overflow: hidden;
+  }
+
+  .navbar > nav {
+    float: left;
+    min-width: 20rem;
+    }
+
+    .navbar h1,
+    .navbar a {
+      display: inline;
+      float: left;
+      padding: .5rem 1.5rem;
+      margin: 0;
+      }
+
+    .navbar h1 {
+      font-size: 1.333em;
+      font-weight: normal; line-height: 1.5rem;
+      margin-right: 1px;
+      }
+
+    .navbar a {
+      float: left;
+      padding: .5rem 1rem;
+      margin: 0 0 0 .5rem;
+      }
+
+    .navbar a:hover {
+      background: #eee;
+      }
+    .navbar a.router-link-active,
+    .navbar a.router-link-active:hover {
+      background: #fff;
+      }
+
+
+figure > img {
+  transition: opacity .6s;
+  }
+a:hover figure > img {
+  opacity: 0.75;
+  }
+
+
+.products {
+  margin-right: -24px;
+  }
+
+  .products__item {
+    display: inline-block;
+    width: 222px;
+    margin: .75em 24px .75em 0;
+    }
+
+    .products__item section.product {
+      margin: 0;
+      }
+
+@media screen and (max-width: 480px) {
+  .products__item {
+    width: 94px;
+    }
+  }
+
+@media screen and (max-width: 720px) {
+  .products__item {
+    width: 158px;
+    }
+  }
+
+.product {
+  }
+
+  .product header {
+    margin: 1.5em 0 .75em;
+    }
+
+  .price {
+    font-weight: 400;
+    }
+
+
+.buttons {
+  text-align: right;
+  margin: 1.5em 0;
+  }
+
+  .buttons button {
+    display: inline-block;
+    margin: 0 .75em;
+    }
