@@ -31,6 +31,7 @@ export class CartService {
 
   clearCart() {
     this.items.splice(0, this.items.length);
+    this._itemsByProductId = {};
     this.saveToLocalStorage();
   }
 
